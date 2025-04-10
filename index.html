@@ -1,0 +1,75 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Linkedin, Github } from "lucide-react";
+
+export default function ProfilePage() {
+  return (
+    <main className="min-h-screen bg-gradient-to-br from-indigo-100 to-white p-6 flex flex-col items-center">
+      <section className="text-center mt-10">
+        <h1 className="text-4xl font-bold mb-2">Kshitij Chitaure</h1>
+        <p className="text-xl text-gray-600">Full Stack Developer | Tech Enthusiast</p>
+      </section>
+
+      <section className="mt-10 max-w-2xl w-full">
+        <Card className="p-6 shadow-xl rounded-2xl">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+            <p className="text-gray-700">
+              Passionate developer with a love for building beautiful and functional web applications. Constantly learning and exploring new technologies to improve my craft.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-10 max-w-2xl w-full">
+        <Card className="p-6 shadow-xl rounded-2xl">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>JavaScript / TypeScript</li>
+              <li>React & Next.js</li>
+              <li>Node.js / Express</li>
+              <li>MongoDB / PostgreSQL</li>
+              <li>Tailwind CSS</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-10 max-w-2xl w-full">
+        <Card className="p-6 shadow-xl rounded-2xl">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+            <ul className="space-y-4 text-gray-700">
+              <li>
+                <strong>Portfolio Website</strong> – A personal website to showcase my work and skills.
+              </li>
+              <li>
+                <strong>Task Manager App</strong> – A full-stack productivity app for managing tasks and deadlines.
+              </li>
+              <li>
+                <strong>Blog Platform</strong> – A dynamic platform for writing and sharing blog posts.
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mt-10 max-w-2xl w-full text-center">
+        <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+        <div className="flex justify-center space-x-4">
+          <a href="mailto:kshitij@example.com" aria-label="Email">
+            <Button variant="outline"><Mail className="mr-2" /> Email</Button>
+          </a>
+          <a href="https://linkedin.com/in/kshitij" target="_blank" aria-label="LinkedIn">
+            <Button variant="outline"><Linkedin className="mr-2" /> LinkedIn</Button>
+          </a>
+          <a href="https://github.com/kshitij" target="_blank" aria-label="GitHub">
+            <Button variant="outline"><Github className="mr-2" /> GitHub</Button>
+          </a>
+        </div>
+      </section>
+    </main>
+  );
+}
